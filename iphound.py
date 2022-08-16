@@ -16,4 +16,7 @@ def greynoise():
 
 
 def main():
-        greynoise
+    greynoise
+
+if __name__ == "__main__":
+    main()
