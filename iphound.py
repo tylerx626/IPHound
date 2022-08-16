@@ -19,9 +19,9 @@ def ipinfo():
     print(r.json())
 
 def dnsTrail():
-    headers = {'content-type': 'application/json', 'APIKEY': 'pYIVSi6qspPzwXL6FJM9QQNCfxPCXboE'}
+    headers = {'Accept': 'application/json', 'APIKEY': 'pYIVSi6qspPzwXL6FJM9QQNCfxPCXboE'}
     url = 'https://api.securitytrails.com/v1/ip/' + ip
-    r= requests.get(url)
+    r= requests.get(url, headers=headers)
     print(r.json())
 
 def main():
