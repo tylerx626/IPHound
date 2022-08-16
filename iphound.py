@@ -20,7 +20,7 @@ def ipinfo():
 
 def dnsTrail():
     headers = {'Accept': 'application/json', 'APIKEY': 'pYIVSi6qspPzwXL6FJM9QQNCfxPCXboE'}
-    url = 'https://api.securitytrails.com/v1/ips/' + ip
+    url = 'https://api.securitytrails.com/v1/history/' + ip + '/dns/a'
     r= requests.get(url, headers=headers)
     print(r.json())
 
