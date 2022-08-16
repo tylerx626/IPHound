@@ -16,6 +16,7 @@ def greynoise():
 
 
 def main():
+    print('running greynoise commands...')
     greynoise
 
 if __name__ == "__main__":
