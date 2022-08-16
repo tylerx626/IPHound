@@ -18,12 +18,19 @@ def ipinfo():
     r= requests.get(url)
     print(r.json())
 
+def dnsTrail():
+    headers = {'content-type': 'application/json', 'APIKEY': 'pYIVSi6qspPzwXL6FJM9QQNCfxPCXboE'}
+    url = 'https://api.securitytrails.com/v1/ip/' + ip
+    r= requests.get(url)
+    print(r.json())
 
 def main():
     print('Checking GreyNoise.io...')
     greynoise()
     print('Checking ipinfo.io...')
     ipinfo()
+    print('Checking with SecurityTrails DNS records...')
+    dnsTrail()
 
 if __name__ == "__main__":
     main()
