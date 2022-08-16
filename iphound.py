@@ -9,7 +9,7 @@ def greynoise():
     headers = {'content-type': 'application/json', 'key': 'null'}
     url = 'https://api.greynoise.io/v3/community/' + ip
     r= requests.get(url)
-    r.json()
+    print(r.json())
 
 
 #def ipinfo():
