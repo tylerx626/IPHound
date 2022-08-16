@@ -2,6 +2,6 @@
 
 import os
 
-greynoiseKey = input("Enter your GreyNoise API key: ")
+#greynoiseKey = input("Enter your GreyNoise API key: ")
 
-os.system("greynoise setup --api-key " + greynoiseKey )
+#os.system("greynoise setup --api-key " + greynoiseKey )
