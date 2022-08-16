@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import os,requests
+import os,requests,ipinfo,pprint
 
 ip = input("Enter the IP address: ")
 
@@ -12,12 +12,18 @@ def greynoise():
     print(r.json())
 
 
-#def ipinfo():
+def ipinfo():
+    headers = {'content-type': 'application/json'}
+    url = 'https://ipinfo.io/' + ip
+    r= requests.get(url)
+    print(r.json())
 
 
 def main():
-    print('running greynoise commands...')
+    print('Checking GreyNoise.io...')
     greynoise()
+    print('Checking ipinfo.io...')
+    ipinfo()
 
 if __name__ == "__main__":
     main()
