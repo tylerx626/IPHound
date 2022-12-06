@@ -19,7 +19,7 @@ def ipinfo():
     print(r.json())
 
 def dnsTrail():
-    headers = {'Accept': 'application/json', 'APIKEY': 'pYIVSi6qspPzwXL6FJM9QQNCfxPCXboE'}
+    headers = {'Accept': 'application/json', 'APIKEY': 'pYIVSi6qspPzwXL6FJM9QQNCfxPCXboEE'}
     url = 'https://api.securitytrails.com/v1/domain/' + ip
     r= requests.get(url, headers=headers)
     print(r.json())
@@ -34,3 +34,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+    ##to-do, AWS integration
+    ##
+    ##[default]
+    ##aws_access_key_id = AKIAYVP4CIPPK6H73IUM
+    ##aws_secret_access_key = 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
+    ##output = json
+    ##region = us-east-2
